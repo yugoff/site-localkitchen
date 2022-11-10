@@ -10,7 +10,7 @@ body {
 }
 
 .content {
-    background-color: #f1f1f1;
+    background-color: #fafafa;
     flex: 1 0 auto;
 }
 
@@ -19,7 +19,7 @@ header {
     justify-content: center;
     padding: 0;
     margin: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #fafafa;
     height: 60px;
 }
 
@@ -39,48 +39,117 @@ header {
 }
 
 .intro-content {
-    background-color: #f1f1f1;
+    background-color: #fafafa;
 }
 
 .section-block-1 {
     width: 50%;
     float: left;
     padding: 30px;
+    background-color: #fafafa;
 }
 
 .section-header-logo {
     font-size: 30px;
     margin-bottom: 20px;
+    font-family: Druk;
+    line-height: 0.9;
+    font-weight: 900;
 }
 
 .section-header-content {
-    font-size: 50px;
+    font-size: 70px;
     margin-bottom: 20px;
+    font-family: Druk;
+    line-height: 0.9;
+    font-weight: 900;
 }
 
 .section-header-button {
-    /* */
+    height: 5.9952038369vw;
+    font-size: 1.9184652278vw;
+    width: 20.623501199vw;
+    margin-top: 3.5971223022vw;
 }
 
 .section-header-button button {
     border-radius: 50px;
+    border-color: #333;
     background-color: #333;
     color: #f1f1f1;
     font-size: 16px;
-    padding: 15px 20px;
+    padding: 12px 30px;
+    font-weight: 600;
 }
 
 .section-header-button button:hover {
-    border-radius: 25%;
-    background-color: #333;
-    color: #f1f1f1;
-    font-size: 16px;
-    padding: 20px 40px;
+    
 }
 
 .section-block-2 {
-    width: 50%;
+    width: 43%;
     float: right;
+}
+
+.intro-menu {
+    
+}
+
+.intro-menu-mini li {
+    --tab-height: 50px;
+    --tab-spacing: 30px;
+    padding: 0 var(--content-left-inset);
+    overflow: auto;
+    user-select: none;
+}
+
+.tabs-mini {
+    display: flex;
+    list-style-type: none;
+}
+
+.tabs-mini li button {
+    font-size: 1.2em;
+    border-radius: 30px;
+    border-color: #333;
+    background-color: #ffffff;
+    padding: 12px 30px;
+    border-color: #f1f1f1;
+    border-style: none;
+}
+
+.tabs-mini li button:hover {
+    font-size: 1.2em;
+    border-radius: 30px;
+    border-color: #333;
+    background-color: #ffffff;
+    padding: 12px 30px;
+    border-color: #f1f1f1;
+}
+
+.intro-center {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.intro-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.intro-info-h1 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.intro-info-h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-top: 15px;
 }
 
 footer {
