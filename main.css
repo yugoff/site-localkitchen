@@ -19,7 +19,7 @@ header {
     justify-content: center;
     padding: 0;
     margin: 0;
-    background-color: #fafafa;
+    background-color: #ffffff;
     height: 60px;
 }
 
@@ -40,12 +40,13 @@ header {
 
 .intro-content {
     background-color: #fafafa;
+    display: flex;
+    
 }
 
 .section-block-1 {
     width: 50%;
-    float: left;
-    padding: 30px;
+    margin: 40px 0 0 40px;
     background-color: #fafafa;
 }
 
@@ -53,15 +54,15 @@ header {
     font-size: 30px;
     margin-bottom: 20px;
     font-family: Druk;
-    line-height: 0.9;
     font-weight: 900;
+    padding-bottom: 10px;
 }
 
 .section-header-content {
     font-size: 70px;
     margin-bottom: 20px;
     font-family: Druk;
-    line-height: 0.9;
+    line-height: 0.6;
     font-weight: 900;
 }
 
@@ -70,37 +71,45 @@ header {
     font-size: 1.9184652278vw;
     width: 20.623501199vw;
     margin-top: 3.5971223022vw;
+    margin-bottom: 30px;
 }
 
 .section-header-button button {
     border-radius: 50px;
-    border-color: #333;
     background-color: #333;
     color: #f1f1f1;
-    font-size: 16px;
+    font-size: 18px;
     padding: 12px 30px;
-    font-weight: 600;
+    font-weight: 700;
+    border-style: none;
+    height: 55px;
 }
 
 .section-header-button button:hover {
-    
+    border-radius: 50px;
+    background-color: #333;
+    color: #f1f1f1;
+    font-size: 19px;
+    padding: 10px 28px;
+    font-weight: 700;
+    border-style: none;
+    height: 60px;
+    transition: 50ms;
 }
 
 .section-block-2 {
-    width: 43%;
-    float: right;
+    width: 50%;
+    background-color: #fafafa;
+    justify-content: center;
 }
 
 .intro-menu {
-    
+    background-color: #fafafa;
+    padding-bottom: 20px;
 }
 
 .intro-menu-mini li {
-    --tab-height: 50px;
-    --tab-spacing: 30px;
-    padding: 0 var(--content-left-inset);
-    overflow: auto;
-    user-select: none;
+    margin-right: 10px;
 }
 
 .tabs-mini {
@@ -112,32 +121,70 @@ header {
     font-size: 1.2em;
     border-radius: 30px;
     border-color: #333;
-    background-color: #ffffff;
+    background-color: #fafafa;
     padding: 12px 30px;
     border-color: #f1f1f1;
     border-style: none;
 }
 
-.tabs-mini li button:hover {
+.tabs-mini li button:focus {
     font-size: 1.2em;
     border-radius: 30px;
     border-color: #333;
     background-color: #ffffff;
     padding: 12px 30px;
     border-color: #f1f1f1;
+    -webkit-box-shadow: 0 1px 1px #fff;
+    -moz-box-shadow:  0 1px 1px #fff;
+    box-shadow:  1px 1px 0 #fff, inset 0 2px 2px rgba(94, 94, 94, 0.3);
+    transition: 1s;
+}
+
+.intro-menu-max {
+    display: grid;
+}
+
+.intro-menu-max li{
+    list-style-type: none;
+    width: 370px;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.tabs-max {
+    display: flex;
 }
 
 .intro-center {
     font-size: 30px;
     line-height: 40px;
     text-align: center;
+    background-color: #fafafa;
+    padding-bottom: 100px;
+}
+
+.intro-center p {
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.intro-map {
+    -ms-touch-action: auto;
+    touch-action: auto;
 }
 
 .intro-info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    width: 88.0095923261vw;
+    max-width: 1400px;
+    margin: 0 auto;
     gap: 50px;
 }
+
+                                                                                                                
 
 .intro-info-h1 {
     font-weight: 800;
