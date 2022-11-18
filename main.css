@@ -38,6 +38,17 @@ header {
     color: #333;
 }
 
+.running-line button {
+    position: relative;
+    bottom: 5px;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-style: none;
+    border-radius: 50px;
+    box-shadow: rgba(0,0,0, 30%) 0px 2px 8px -3px;   
+}
+
 .intro-content {
     background-color: #fafafa;
     display: flex;
@@ -55,15 +66,17 @@ header {
     margin-bottom: 20px;
     font-family: Druk;
     font-weight: 900;
-    padding-bottom: 10px;
 }
 
 .section-header-content {
-    font-size: 70px;
     margin-bottom: 20px;
     font-family: Druk;
     line-height: 0.6;
     font-weight: 900;
+}
+
+.section-header-content p {
+    
 }
 
 .section-header-button {
@@ -157,6 +170,21 @@ header {
     display: flex;
 }
 
+.tabs-max p {
+    padding: 30px;
+    width: 180px;
+    font-weight: 500;
+    line-height: 1.25;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+.tabs-max img {
+    position: relative;
+    width: 230px;
+    bottom: 157px;
+    right: -191px;
+}
+
 .intro-center {
     font-size: 30px;
     line-height: 40px;
@@ -173,30 +201,35 @@ header {
 .intro-map {
     -ms-touch-action: auto;
     touch-action: auto;
+    padding-bottom: 40px;
 }
 
 .intro-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 88.0095923261vw;
-    max-width: 1400px;
-    margin: 0 auto;
-    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 0 20px;
 }
 
-                                                                                                                
+.intro-info-1 {
+    width: 30%;
+    margin: 10px;
+}                                                                                                       
 
 .intro-info-h1 {
-    font-weight: 800;
-    font-size: 28px;
-    line-height: 30px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 0.8;
+    padding-bottom: 15px;
+}
+
+.intro-info-h1 img {
+    width: 100%;
+    padding-bottom: 15px;    
 }
 
 .intro-info-h3 {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-    margin-top: 15px;
+    font-size: 17px;
+    width: 90%;
 }
 
 footer {
